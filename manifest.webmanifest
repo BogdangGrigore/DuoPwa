@@ -1,0 +1,48 @@
+{
+    
+    "background_color": "#87776e",
+    "display": "fullscreen",
+    "scope": ".",
+    "start_url": "./",
+    "name": "artpop",
+    "short_name": "artpop",
+    "theme_color": "#007bff",
+    "description": "Artpop is an art recognition tool",
+    "prefer_related_applications": true,
+    "related_applications": [
+    {
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=com.example.myapp"
+    },
+    {
+        "platform": "itunes",
+        "url": "https://itunes.apple.com/us/app/myapp/id1234567890"
+    }
+    ],
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

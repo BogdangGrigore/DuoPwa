@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+     if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+    .then(registration => {
+      console.log('Service worker registered', registration);
+    })
+    .catch(error => {
+      console.error('Service worker registration failed', error);
+    });
+  });
+}
+
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007bff">
+    <script src="/service-worker.js"></script>
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/icon-192x192.png">
+  </head>
+  <body>
+    <h2>You are looking at:</h2>
+    <h1>Van Gogh</h1>
+    <h3>The Starry Night</h3>
+
+    <section>
+      <h2>Info about the painting</h2>
+      <p>
+        There are over 35 self-portraits by Vincent but just one portrait photo
+        of him Only one portrait photo of Vincent has survived. It shows him at
+        the age of 19 with a slightly gruff expression. Almost everything else
+        we know about his appearance comes from the many self-portraits he
+        painted. No fewer than 35 of them are known. They tell us that he had
+        red hair, green eyes and an angular face. Yet each of those faces is
+        different. Vincent himself wrote: ‘People say – and I’m quite willing to
+        believe it – that it’s difficult to know oneself – but it’s not easy to
+        paint oneself either.
+      </p>
+    </section>
+
+    <div class="menu">
+      <div class="showroom">
+        <a href="/Showroom/index.html"><h1>SHOWROOM</h1></a>
+      </div>
+      <div class="blog"><h1>BLOG</h1></div>
+      <div class="profile"><h1>PROFILE</h1></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+:root {
+  --primary-text: 'Abril Fatface';
+  --accent-text: 'sans serif';
+}
+
+html {
+  background-color: #5a553f;
+  background-image: linear-gradient(rgba(92, 87, 65), rgba(217, 217, 217));
+  overflow: hidden;
+}
+
+body {
+  color: #fff;
+  font-family: var(--primary-text), cursive;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Title */
+
+.title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+/* Filter */
+
+.filter {
+  display: flex;
+  font-size: 10px;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ARTWORKS */
+img {
+  width: 217px;
+  height: 344px;
+  border-radius: 100px;
+}
+
+.grid_artworks {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  margin-left: 20px;
+  gap: 20px;
+}
+
+.scan {
+  position: relative;
+}
+
+.number h1 {
+  position: absolute;
+  font-style: normal;
+  top: -40px;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 86px;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1.3px #fff;
+}
+
+.img_text {
+  position: absolute;
+  top: 35%;
+  left: 20px;
+  cursor: pointer;
+}
+
+.name {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 0.3px #fff;
+}
+
+.artist {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  font-size: 16px;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  font-style: none;
+  color: #ffffff;
+}
+
+.menu {
+  margin-left: -10px;
+  margin-top: 50px;
+  border-radius: 20px;
+  font-size: 10px;
+  display: flex;
+  gap: 10px;
+  width: 395px;
+  justify-content: center;
+  background-color: #a08d7f;
+  height: 200px;
+  z-index: 10;
+  position: absolute;
+  bottom: -130px;
+}

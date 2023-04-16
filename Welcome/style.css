@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+html {
+  background-color: #5a553f;
+  background-image: linear-gradient(rgba(92, 87, 65), rgba(217, 217, 217));
+}
+
+body {
+  color: #fff;
+  font-family: 'Abril Fatface', cursive;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.welcome h1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  margin-bottom: 0;
+}
+
+.welcome h2 {
+  margin-top: 0px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+img {
+  width: 217px;
+  height: 344px;
+  border-radius: 100px;
+}
+
+.recents > h1 {
+  margin-left: 20px;
+}
+
+.scans {
+  display: flex;
+  margin-left: 20px;
+  gap: 20px;
+}
+
+.scan {
+  position: relative;
+}
+
+.number h1 {
+  position: absolute;
+  font-style: normal;
+  top: -40px;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 86px;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1.3px #fff;
+}
+
+.img_text {
+  position: absolute;
+  top: 35%;
+  left: 20px;
+  cursor: pointer;
+}
+
+.name {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 0.3px #fff;
+}
+
+.artist {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  font-size: 16px;
+}
+
+.btn_scan {
+  background-color: #a08d7f;
+  width: 290px;
+  margin-left: 45px;
+  margin-top: 40px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  font-family: sans-serif;
+  color: #e7e7e7;
+}
+
+.menu {
+  margin-left: -10px;
+  margin-top: 50px;
+  border-radius: 20px;
+  font-size: 10px;
+  display: flex;
+  gap: 10px;
+  width: 395px;
+  justify-content: center;
+  background-color: #a08d7f;
+  height: 200px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  font-style: none;
+  color: #ffffff;
+}

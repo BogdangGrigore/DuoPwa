@@ -1,0 +1,55 @@
+html,
+body {
+  overflow: hidden;
+  margin: 0;
+  position: absolute;
+  width: 393px;
+  height: 852px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(
+    359.57deg,
+    #5c5741 9.75%,
+    rgba(217, 217, 217, 0) 122%
+  );
+}
+@media (max-width: 786) {
+  body {
+    height: 100vh;
+  }
+}
+
+.camera {
+  position: absolute;
+  width: 324px;
+  height: 646px;
+  left: 35px;
+  top: 62px;
+  background: #d9d9d9;
+  border-radius: 50px;
+}
+.btnNext {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 157px;
+  top: 719px;
+  background: #a08d7f;
+  border-radius: 50%;
+}
+a {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  left: 174px;
+  top: 736px;
+}
+.fa-solid {
+  position: absolute;
+  left: 32.23%;
+  right: 36.67%;
+  top: 13.42%;
+  bottom: 10.52%;
+  color: white;
+  font-size: 33px;
+}

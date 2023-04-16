@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script>
+      if ('serviceWorker' in navigator) {
+   window.addEventListener('load', () => {
+     navigator.serviceWorker.register('/service-worker.js')
+     .then(registration => {
+       console.log('Service worker registered', registration);
+     })
+     .catch(error => {
+       console.error('Service worker registration failed', error);
+     });
+   });
+ }
+ 
+     </script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="theme-color" content="#007bff">
+     <script src="/service-worker.js"></script>
+     <link rel="manifest" href="/manifest.webmanifest">
+     <link rel="apple-touch-icon" href="/icon-192x192.png">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="login.css" />
+    <script
+      src="https://kit.fontawesome.com/6f153813b7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="btnLoginA">
+      <a href="/Welcome/main.html"
+        ><i class="fa-brands fa-apple"></i> Sign up with Apple
+      </a>
+    </div>
+    <div class="btnLoginG">
+      <a href="/Welcome/main.html">
+        <i class="fa-brands fa-google"></i> Sign up with Google</a
+      >
+    </div>
+    <span id="linef"></span>
+    <span id="or">or</span>
+    <span id="lines"></span>
+
+    <span id="create">Create an account or log in</span>
+  </body>
+</html>

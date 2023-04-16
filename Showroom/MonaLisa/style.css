@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+  background-color: #5a553f;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg');
+
+  /* background-image: linear-gradient(rgba(92, 87, 65), rgba(217, 217, 217)); */
+
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: center;
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Abril Fatface';
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1.3px #fff;
+}
+
+h3 {
+  font-size: 26px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu {
+  margin-left: -10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  font-size: 10px;
+  display: flex;
+  gap: 10px;
+  width: 395px;
+  justify-content: center;
+  background-color: #a08d7f;
+  height: 200px;
+}
+
+p {
+  font-size: larger;
+  margin-bottom: 90px;
+}
+
+.menu h1 {
+  margin-top: 20px;
+  font-size: large;
+  color: #fff;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  font-style: none;
+  color: #ffffff;
+}

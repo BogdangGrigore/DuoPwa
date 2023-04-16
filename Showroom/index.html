@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>showroom</title>
+    <script>
+     if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+    .then(registration => {
+      console.log('Service worker registered', registration);
+    })
+    .catch(error => {
+      console.error('Service worker registration failed', error);
+    });
+  });
+}
+
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007bff">
+    
+    <script src="/service-worker.js"></script>
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/icon-192x192.png">
+  </head>
+  <body>
+    <section class="title"><h1>SHOWROOM</h1></section>
+
+    <section class="filter">
+      <h2>Filter by:</h2>
+      <div class="filters">
+        <h2>ARTIST</h2>
+        <h2>MUSEUM</h2>
+        <h2>ARTSTYLE</h2>
+      </div>
+    </section>
+
+    <section class="grid_artworks">
+      <!-- <div class="scan">
+        <div class="number"><h1>01</h1></div>
+        <div class="image"><img src="image1.jpg" alt="" /></div>
+        <div class="img_text"><p>click here for more info</p></div>
+        <div class="name"><h1>Der Kuss</h1></div>
+        <div class="artist"><h2>Gustav Klimt</h2></div>
+      </div>
+
+      <div class="scan">
+        <div class="number"><h1>02</h1></div>
+        <div class="image"><img src="image1.jpg" alt="" /></div>
+        <div class="img_text"><p>click here for more info</p></div>
+        <div class="name"><h1>Der Kuss</h1></div>
+        <div class="artist"><h2>Gustav Klimt</h2></div>
+      </div>
+
+      <div class="scan">
+        <div class="number"><h1>02</h1></div>
+        <div class="image"><img src="image1.jpg" alt="" /></div>
+        <div class="img_text"><p>click here for more info</p></div>
+        <div class="name"><h1>Der Kuss</h1></div>
+        <div class="artist"><h2>Gustav Klimt</h2></div>
+      </div>
+
+      <div class="scan">
+        <div class="number"><h1>02</h1></div>
+        <div class="image"><img src="image1.jpg" alt="" /></div>
+        <div class="img_text"><p>click here for more info</p></div>
+        <div class="name"><h1>Der Kuss</h1></div>
+        <div class="artist"><h2>Gustav Klimt</h2></div>
+      </div>
+
+      <div class="scan">
+        <div class="number"><h1>02</h1></div>
+        <div class="image"><img src="image1.jpg" alt="" /></div>
+        <div class="img_text"><p>click here for more info</p></div>
+        <div class="name"><h1>Der Kuss</h1></div>
+        <div class="artist"><h2>Gustav Klimt</h2></div>
+      </div> -->
+    </section>
+
+    <div class="menu">
+      <div class="showroom">
+        <a href="/Welcome/main.html"><h1>HOME</h1></a>
+      </div>
+      <div class="blog"><h1>BLOG</h1></div>
+      <div class="profile"><h1>PROFILE</h1></div>
+    </div>
+    
+
+    <script src="./app.js"></script>
+  </body>
+</html>

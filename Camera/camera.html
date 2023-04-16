@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camera</title>
+    <link rel="stylesheet" href="camera.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://kit.fontawesome.com/6f153813b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+   window.addEventListener('load', () => {
+     navigator.serviceWorker.register('/service-worker.js')
+     .then(registration => {
+       console.log('Service worker registered', registration);
+     })
+     .catch(error => {
+       console.error('Service worker registration failed', error);
+     });
+   });
+ }
+ 
+     </script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="theme-color" content="#007bff">
+     <script src="/service-worker.js"></script>
+     <link rel="manifest" href="/manifest.webmanifest">
+     <link rel="apple-touch-icon" href="/icon-192x192.png">
+    <link rel="apple-touch-icon" href="/icon-192x192.png">
+  </head>
+  <body>
+    <video
+      class="camera"
+      id="video"
+      autoplay
+      style="transform: scaleX(-1)"
+      width="324px"
+      height="646px"
+    ></video>
+
+    <div class="btnNext" id="snap">
+      <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
